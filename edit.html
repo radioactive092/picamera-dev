@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Edit preferences</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+          <form action="inputdata.php" method="POST">
+
+            <label for="semail">Sender's Email</label>
+            <input type="email" id="semail" name="semail" placeholder="Sender's Email..">
+
+            <label for="passwd">Password</label>
+            <input type="password" id="passwd" name="passwd" placeholder="Email password..">
+
+            <label for="temail">Receiver's Email</label>
+            <input type="email" id="temail" name="temail" placeholder="Receiver's Email..">
+
+            <label for="interval">Email interval(In Seconds)</label>
+            <input type="number" id="interval" name="interval" placeholder="Minimum interval between Emails..">
+
+            <input type="submit" value="Submit">
+
+          </form>
+        </div>
+    </body>
+</html>
