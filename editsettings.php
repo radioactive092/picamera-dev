@@ -17,19 +17,19 @@ $mainpy[8]="email_update_interval = " . $interval . " # sends an email only once
 $sizemail=sizeof($mailpy);
 $sizemain=sizeof($mainpy);
 
-$fhmailpy = fopen('mailtest.py', 'w');
+$fhmailpy = fopen('mail.py', 'w');
 fclose($fhmailpy);
-$fhmainpy = fopen('maintest.py', 'w');
+$fhmainpy = fopen('main.py', 'w');
 fclose($fhmainpy);
 
 for($i=0;$i<$sizemail;$i++)
 {
-    file_put_contents("mailtest.py" , $mailpy[$i] . PHP_EOL, FILE_APPEND);
+    file_put_contents("mail.py" , $mailpy[$i] . PHP_EOL, FILE_APPEND);
 }
 
 for($i=0;$i<$sizemain;$i++)
 {
-    file_put_contents("maintest.py" , $mainpy[$i] . PHP_EOL, FILE_APPEND);
+    file_put_contents("main.py" , $mainpy[$i] . PHP_EOL, FILE_APPEND);
 }
 
 print ("Settings Updated Successfully");
