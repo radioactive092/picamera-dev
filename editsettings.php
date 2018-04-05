@@ -7,7 +7,6 @@ $temail=$_POST['temail'];
 
 $mailpy = explode("\n", file_get_contents('mail.py'));
 $mainpy = explode("\n", file_get_contents('main.py'));
-//$inputdata = explode("\n", file_get_contents('inputdata.txt'));
 
 $mailpy[6]="fromEmail = " . "'" . $semail . "'";
 $mailpy[9]="fromEmailPassword = " . "'" . $passwd . "'";
