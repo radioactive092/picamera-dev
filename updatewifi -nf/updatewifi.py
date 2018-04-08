@@ -9,7 +9,7 @@ fhand.close()
 
 fhand=open("/etc/wpa_supplicant/wpa_supplicant.conf")
 wpadata=fhand.read()
-wpadata=fhand.split("\n")
+wpadata=wpadata.split("\n")
 fhand.close()
 
 for line in wpadata :
