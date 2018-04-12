@@ -9,7 +9,7 @@
     </head>
     <h3>Change Settings</h3>
     <body>
-        <form action="editsettings.php" method="post">
+        <form action="../editsettings.php" method="post">
             <p>From Email :<input type="text" name="semail"></p>
             <p>Password :<input type="password" name="passwd"></p>
             <p>To Email :<input type="text" name="temail"></p>
