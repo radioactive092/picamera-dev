@@ -15,17 +15,20 @@
             <p>Password :<input type="password" name="passwd"></p>
             <p>To Email :<input type="text" name="temail"></p>
             <p>Email minimum interval:<input type="text" name="interval"></p>
-            <p>Toggle service ON/OFF :
-              <label class="switch">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label></p>
             <p><input type="submit" name="submit" value="Submit"></p>
+        </form>
 
-
-
+        <form action="toggleservice.php" method="post">
+          <p>Toggle service ON/OFF :
+            <label class="switch">
+              <input type="checkbox" name="on">
+              <span class="slider round"></span>
+            </label></p>
+          <p><input type="submit" name="toggle" value="toggle"></p>
 
         </form>
+
+        <a href="logout.php">Logout</a>
     </body>
 </html>
 
