@@ -15,9 +15,18 @@
             <p>To Email :<input type="text" name="temail"></p>
             <p>Email minimum interval:<input type="text" name="interval"></p>
             <p><input type="submit" name="submit" value="Submit"></p>
-
-
         </form>
+
+        <form action="./loginsystem/servicestatus.php" method="post">
+          <p>Change Service Status:
+            <input type="radio" name="servicestatus" value="restart"/>Restart Service
+            <input type="radio" name="servicestatus" value="start"/>Start Service
+            <input type="radio" name="servicestatus" value="stop"/>Stop Service
+          </p>
+          <input type="submit" name="submit" value="Submit"/>
+        </form>
+        <br><br>
+        <a href="./loginsystem/logout.php">Logout</a>
     </body>
 </html>
 
