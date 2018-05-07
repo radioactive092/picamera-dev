@@ -17,7 +17,7 @@
             <p><input type="submit" name="submit" value="Submit"></p>
         </form>
 
-        <form action="./loginsystem/servicestatus.php" method="post">
+        <form action="../loginsystem/servicestatus.php" method="post">
           <p>Change Service Status:
             <input type="radio" name="servicestatus" value="restart"/>Restart Service
             <input type="radio" name="servicestatus" value="start"/>Start Service
