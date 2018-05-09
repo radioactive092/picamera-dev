@@ -1,0 +1,9 @@
+Options +FollowSymLinks -MultiViews +Indexes
+
+RewriteEngine On
+
+RewriteRule ^login$ login.php
+RewriteRule ^logout$ logout.php
+
+RewriteRule ^en/contacts$ ?lang=en&page=contacts&case=list
+RewriteRule ^fr/contacts$ ?lang=fr&page=contacts&case=list
