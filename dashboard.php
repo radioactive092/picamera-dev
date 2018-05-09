@@ -1,4 +1,4 @@
-<?php include('dashboard_action.php'); ?>
+<?php include('action/dashboard_action.php'); ?>
 
 <?php if(!(isset($_SESSION['username']))) { include('nopermission.php'); } else { ?>
 <!DOCTYPE html>
@@ -26,7 +26,8 @@
           <input type="submit" name="submit" value="Submit"/>
         </form>
         <br><br>
-        <a href="./loginsystem/logout.php">Logout</a>
+        <a target="_blank" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>:7001">View Stream</a>
+        <a href="http://<?php echo $_SERVER['HTTP_HOST']; ?>/logout.php">Logout</a>
     </body>
 </html>
 

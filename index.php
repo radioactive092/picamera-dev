@@ -1,11 +1,11 @@
 <?php
 	session_start();
 
-	include('./login_action.php');
+	include('action/login_action.php');
 	if(isset($_SESSION['username'])) {
-		include('./loginsystem/dashboard.php');
+		include('dashboard.php');
 //		var_dump($_SESSION);
 	} else {
-		include('./loginsystem/login.php');
+		include('login.php');
 	}
 ?>
