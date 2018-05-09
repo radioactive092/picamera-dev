@@ -3,13 +3,13 @@ from email.MIMEMultipart import MIMEMultipart
 from email.MIMEText import MIMEText
 from email.MIMEImage import MIMEImage
 
-# Email you want to send the update from (only works with gmail)
+#
 fromEmail = 'raspicam1234@gmail.com'
-# You can generate an app password here to avoid storing your password in plain text
-# https://support.google.com/accounts/answer/185833?hl=en
+#
+#
 fromEmailPassword = 'kray1427'
 
-# Email you want to send the update to
+#
 toEmail = 'raspicam1234@gmail.com'
 
 def sendEmail(image):
@@ -36,4 +36,3 @@ def sendEmail(image):
 	smtp.login(fromEmail, fromEmailPassword)
 	smtp.sendmail(fromEmail, toEmail, msgRoot.as_string())
 	smtp.quit()
-
