@@ -17,6 +17,12 @@
             <p><input type="submit" name="submit" value="Submit"></p>
         </form>
 
+        <form action="/changelogincred.php" method="post">
+            <p>User ID :<input type="text" name="uid"></p>
+            <p>Password : <input type="password" name="password"> </p>
+            <p><input type="submit" name="submit" value="Submit"></p>
+        </form>
+
 <!--        <form action="../loginsystem/servicestatus.php" method="post">
           <p>Change Service Status:
             <input type="radio" name="servicestatus" value="restart"/>Restart Service

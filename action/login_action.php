@@ -12,9 +12,7 @@
 		if(isset($_POST['password'])) {
 			$params['PASSWORD'] = $_POST['password'];
 		}
-		
-		
-		
+
 		if(USERNAME == $params['USERNAME'] && PASSWORD == $params['PASSWORD']) {
 			$_SESSION['username'] = $params['USERNAME'];
 			$_SESSION['userid'] = '1';
