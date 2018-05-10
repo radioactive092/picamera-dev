@@ -4,7 +4,8 @@
 
   if(isset($_SESSION['username'])) {
     session_destroy();
-    header('Location: '.$_SERVER['HTTP_HOST']);
+    //header('Location: '.$_SERVER['HTTP_HOST']);
+    header('Location: index.php');
     exit;
   }
 ?>
