@@ -18,8 +18,6 @@ for($i=0;$i<$size_login_action;$i++)
     file_put_contents("action/login_action.php" , $login_action[$i] . PHP_EOL, FILE_APPEND);
 }
 
-//echo "Login credentials updated, log back in.";
-
 include('logout.php');
-
+echo "Login credentials updated, please log back in with the new credentials.";
 ?>

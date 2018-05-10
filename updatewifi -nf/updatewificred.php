@@ -1,12 +1,8 @@
 <?php
-$ssid= '"' . $_POST['ssid'] . '"';
-$psk= '"' . $_POST['psk'] . '"';
-$file="wificred.txt";
+  $ssid= '"' . $_POST['ssid'] . '"';
+  $psk= '"' . $_POST['psk'] . '"';
 
-file_put_contents($file, $ssid . PHP_EOL . $psk . PHP_EOL)
+  $login_action = explode("\n", file_get_contents('action/login_action.php'));
+  
 
-$command = escapeshellcmd('./updatewifi.py');
-$output = shell_exec($command);
-echo $output;
-#echo "Settings updated successfully!";
 ?>

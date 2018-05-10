@@ -1,0 +1,31 @@
+﻿FAQ:
+
+
+
+
+      1.How  do I view the stream?
+        A: Enter the dashboard via the username and password, An option at the bottom will be present called ‘View Stream’. Clicking on it will redirect you to a page where you can view the live stream from the pi camera.
+
+
+       2. How do I send the images clicked by the pi to my own address?
+        A: In the dashboard after one has logged in, there is a field present called toEmail. Enter the required mail address and click on submit. This will ensure that once a face is detected, the pi sends you a mail in that email address containing the picture with the face detected.
+
+
+       3. How to change the time interval ?
+        A: The dashboard contains a field called ‘Email minimum interval’ . Set the desired time and click on submit. The value you enter is the minimum interval time in seconds between two subsequent images being sent.
+
+
+       4.How do I log in to the system?
+        A: Enter the valid login credentials (username and password) and submit it to enter the dashboard. You cannot have access to the dashboard unless you enter the valid credentials.
+
+
+       5. How to exit from the Dashboard?
+        A: At  the bottom of the Dashboard , there is an option called Logout. Click on it to exit from the system.
+
+
+       6. What is the reason my video stream is not showing?
+        A: Connect the Pi properly and restart the services. Click on the ‘View Stream’ to start the stream. Ensure that the Pi module is running in order to view the live stream.
+
+
+      7. What is the content of the mail sent?
+A: An image will be sent with your face detected.

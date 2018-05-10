@@ -33,6 +33,8 @@
         </form>
 -->
         <br><br>
+        <a href="documentation/FAQ.html">FAQ</a>
+        <br>
         <a target="_blank" href="http://<?php echo $_SERVER['HTTP_HOST']; ?>:7001">View Stream</a>
         <br>
         <a href="/updatesystem.php">Update System</a>

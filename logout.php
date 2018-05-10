@@ -11,7 +11,9 @@
 
 session_start();
 session_destroy();
-header('Location: index.php');
+echo "Logging out...";
+header( "refresh:3;url=index.php" );
+//header('Location: index.php');
 exit;
 
 ?>
