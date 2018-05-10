@@ -63,10 +63,17 @@ ln -s /usr/local/lib/python2.7/site-packages/cv2.so cv2.so
 
 
 #For testing install
-$ source ~/.profile 
+$ source ~/.profile
 $ workon cv
 $ python
 >>> import cv2
 >>> cv2.__version__
 '3.1.0'
 >>>
+
+sudo apt install lighttpd
+sudo apt install php php-cgi
+
+sudo lighty-enable-mod fastcgi
+sudo lighty-enable-mod fastcgi-php
+sudo lighttpd-enable-mod rewrite
